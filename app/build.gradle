@@ -29,10 +29,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
 
+    implementation 'androidx.camera:camera-view:1.2.0-alpha02'
+    implementation 'androidx.camera:camera-lifecycle:1.0.2'
+    def camerax_version = "1.1.0-beta02"
     implementation 'com.google.android.material:material:<version>'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
