@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
         btn_setor.setOnClickListener(){
             val setorIntent = Intent(this,
-                SetorActivity::class.java)
+                CameraActivity::class.java)
             startActivity(setorIntent)
         }
     }
