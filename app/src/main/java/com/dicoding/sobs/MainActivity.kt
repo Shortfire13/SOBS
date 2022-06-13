@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val btn_setor : CardView = findViewById(R.id.btn_setor)
         val recyclerView : RecyclerView = findViewById(R.id.rv_sampah)
         val adapter = SampahAdapter(fetchData())

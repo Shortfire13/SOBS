@@ -1,9 +1,11 @@
 package com.dicoding.sobs
 
 
+import android.text.method.TextKeyListener
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -23,5 +25,13 @@ class SampahAdapter(private val item : ArrayList<String>) : RecyclerView.Adapter
     override fun getItemCount(): Int {
        return item.size
     }
+
+    class ItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+        var photo :ImageView = itemView.findViewById<ImageView>(R.id.iv_photo)
+        var sampah : TextView = itemView.findViewById<TextView>(R.id.tv_sampah)
+        var harga : TextView = itemView.findViewById<TextView>(R.id.tv_harga)
+    }
+
 
 }
